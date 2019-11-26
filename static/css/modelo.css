@@ -1,0 +1,354 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 98vh;
+    overflow: scroll;
+    background: rgba(200,200,200,0.5);
+	max-width: 100vw;
+}
+
+video{
+	margin-left: 200px;
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+/* Imagens*/
+img {
+	padding-top: 0px;
+	width: 50px;
+	height: 45px;
+}
+.imgperfil {
+	height: 30vh;
+	width: 18vw;
+}
+.imgperfil {
+	position: absolute;
+	margin-left: 22%;
+}
+div.principal {
+	position: relative;
+}
+
+.imgtutorial {
+	position: relative;
+	margin-left: 30%;
+	margin-top: 2em;
+	margin-bottom: 4em;
+	height: 40vh;
+	width: 40vw;
+}
+img.passos {
+	position: relative;
+	margin-left: 50%;
+	margin-bottom: -12%;
+	height: 200px;
+	width: 350px;
+}
+.tutoriais{
+	position: relative;
+	top: 10px;
+	margin-left: 10%;
+}
+.tutoriais img{
+	width: 300px;
+	height: 200px;
+	margin: 15px;
+	
+}
+.tutoriais img:hover{
+	-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.5);
+	height: 202px;
+	width: 302px;
+}
+
+
+/* Fontes*/
+h1 {
+    color: #757575;
+    margin-bottom: 10px;
+}
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 5em;
+	margin-top: 0px;
+	padding-top: 7%;
+	text-align: center;
+}
+h3.cinza {
+	color: #757575;
+}
+h4 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+	margin-top: 0px;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	text-align: center;
+	color: #d5d5d5;
+}
+h4.perfilinfo, h4.passos{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: left;
+}
+h4.passos {
+	text-align: justify;
+	margin-right: 40%;
+	padding: 0%;
+	color: #222;
+}
+h4.perfilinfonaolog {
+	margin-left: 35%;
+	margin-right: 20%;
+	color: #222;
+}
+h5 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	margin-top: 0px;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	text-align: center;
+	color: #d5d5d5;
+}
+h5.perfilinfo {
+	font-size: 1em;
+	text-align: left;
+}
+h4.perfilinfo, h5.perfilinfo {
+	margin-top: 2px;
+	margin-bottom: 0px;
+	margin-left: 45%;
+	padding: 0%;
+	color: #222;
+}
+#tutorial {
+	padding-bottom: 1em;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 1em;
+}
+p.passos {
+	position: relative;
+	margin-bottom: 1em;
+	margin-right: 25%;
+}
+#comimg {
+	margin-right: 55%;
+}
+
+
+/* Links*/
+a, a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #757575;
+}
+a:hover {
+	text-decoration: none;
+	color: #757575;
+}
+
+
+/* SlideShow*/
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	width: 100%;
+	margin: auto;
+}
+.carousel-caption {
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(100,100,100,0.5);
+}
+.carousel-caption h3, p {
+	position: relative;
+	top: 45%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	text-shadow: none;
+	font-family: 'Raleway', sans-serif;
+}
+.carousel-caption h3 {
+	font-size: 5em;
+}
+.carousel-caption p {
+	font-size: 1.5em;
+}
+
+
+/*Menu Lateral*/
+aside {
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+nav {
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+nav a {
+	text-decoration: none;
+}
+iframe {
+	border: none;
+	margin: 12px;
+}
+
+	/*Id - menu lateral*/
+#check {
+	display: none;
+}
+#icone {
+	cursor: pointer;
+	padding: 15px;
+	position: fixed;
+	z-index: 1;
+	transition: all linear;
+}
+#check:hover ~ .barra {
+	transform: translateX(300px);
+}
+#check ~ .barra:hover {
+	transform: translateX(300px);
+}
+
+	/*Classes - menu lateral*/
+.barra {
+	background-color: rgba(30,30,30,.6);
+	height: 100vh;
+	width: 300px;
+	position: fixed;
+	transition: all .2s linear;
+	left: -300px; 
+}
+.link {
+	background-image: url(/static/img/gray.jpg);
+	background-size: 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	padding: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12pt;
+	transition: all .2;
+	color: #f4f4f9;
+	border-bottom: 2px solid #222;
+}
+.link:hover {
+	background-color: #0505AA;
+}
+	
+
+/* Formulários*/
+input.text, input, button {
+    height: 40px;
+    background-color: #C0C0C0;
+    border: 2px solid rgba(200,200,200,.6);
+}
+fieldset {
+	width: 100%;
+}
+label, label:first-child {
+    font-family: 'Raleway';
+    font-size: 1.45em;
+    color: #696969;
+}
+textarea {
+    margin: 30px;
+    padding: 30px;
+    width: 80%;
+    height: 100px;
+    border-radius: 5%;
+}
+
+
+/* Classes em formulário*/
+.buttom {
+	position: relative;
+	width: 30%;
+	text-align: center;
+	margin-left:35%;
+	margin-bottom: 1em;
+}
+div.duvidas {
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+}
+div.passos {
+	margin-left: 20%;
+	text-align: justify;
+}
+label.duvidas {
+	margin-left: 20px;
+	text-align: left;
+}
+div.botoesform {
+	position: static;
+	margin-top: 12%;
+}
+
+/* Cards*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 21vw;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    height: 75vh;
+    display: inline-block;
+    border: 2px solid rgba(200,200,200,.6);
+}
+.cardnikolas {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 21vw;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    height: 75vh;
+    display: inline-block;
+    border: 2px solid rgba(200,200,200,.6);
+    margin-left: 28%;
+}
+.title {
+    color: grey;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.socialmedia {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.socialmedia:hover {
+    opacity: .3;
+}
+.cards a {
+    text-decoration: none;
+    color: black;
+}
+.cards a:hover {
+    opacity: 0.7;
+}
+img.cards {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}

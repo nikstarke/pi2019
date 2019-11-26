@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página de informações sobre os autores do website">
+        <meta name="keywords" content="perfil; sos; solução.">
+        <meta name="author" content="Matheus Silvério e Nikolas Starke">
+        <title>SOS Soluções Domiciliares</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/modelo.css') }}>
+    </head>
+    <body>
+
+        <!--Menu lateral-->
+        <aside>
+            <input type="checkbox" id="check">
+            <label id="icone" for="check"><img src="/static/img/icons/iconmenu.png" alt="icone"></label>
+            <div class="barra">
+                <nav>
+                    <h4>SOS</h4>
+                    <h5>Soluções Domiciliares</h5>
+                    <a href="/"><div class="link">Home</div></a>
+                    <a href="/perfil"><div class="link">Perfil</div></a>
+                    <a href="/tutoriais"><div class="link">Tutoriais</div></a>
+                    <a href="/contato"><div class="link">Contato</div></a>
+                    <a href="/aboutus"><div class="link">Sobre nós</div></a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.6803485006353!2d-49.13928428522723!3d-26.88189508314086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df1dc9344e104f%3A0x37e3f4a354ae9b76!2sInstituto+Federal+Catarinense+-+Campus+Blumenau!5e0!3m2!1spt-BR!2sbr!4v1507429576851" width="277" height="213" allowfullscreen ></iframe>
+                </nav>
+            </div>
+        </aside>
+
+        {%if session["usuario"]%}
+
+            <h3 class="cinza">Perfil</h3>
+            <img class="imgperfil" src="static/img/prof.png" alt="Perfil">
+            <h4 class="perfilinfo">Nome: {{usuario[0].nome}}</h4>
+            <h5 class="perfilinfo">Email: {{usuario[0].email}}</h5>
+            <h5 class="perfilinfo">Telefone: {{usuario[0].telefone}}</h5>
+            <h5 class="perfilinfo">Data de nascimento: {{usuario[0].nascimento}}</h5>
+            <h5 class="perfilinfo">Endereço: {{usuario[0].endereco}}</h5>
+            
+            <div class="botoesform">
+                <form action="/form_editar_informacoes">
+                    <button class="buttom" type="submit"> Editar informações </button>
+                </form>
+                <form action="/logout">
+                        <button class="buttom" type="submit"> Sair </button>
+                </form>
+            </div>
+        
+        {%else%}
+            <h3 class="cinza">Perfil</h3>
+            <img class="imgperfil" src="static/img/icons/atencao.png" alt="Perfil">
+            <h4 class="perfilinfonaolog">Para visualizar seu perfil é necessário fazer login!</h4>
+            
+            <div class="botoesform">
+                <form action="/form_login">
+                    <button class="buttom" type="submit"> Login </button>
+                </form>
+                <form action="/form_cadastro">
+                        <button class="buttom" type="submit"> Cadastre-se </button>
+                </form>
+            </div>
+        {%endif%}
+                  
+    </body>
+</html>
