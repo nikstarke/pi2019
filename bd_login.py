@@ -17,7 +17,7 @@ class Usuario(BaseModel):
     nome = CharField()
     email = CharField()
     telefone = CharField()
-    nascimeto = CharField()
+    nascimento = CharField()
     endereco = CharField()
     senha = CharField()
 
@@ -26,11 +26,14 @@ class Duvida(BaseModel):
     email = CharField()
     telefone = CharField()
     duvida = CharField()
-
-if __name__ == "__main__":
+try:
     db.connect()
     db.create_tables([Usuario, Duvida])
-
+except:
+    pass
+if __name__ == "__main__":
     #Usuario(nome = "nome", email = "email", telefone = "telefone", nascimento = "nascimento", endereco = "endereco", senha = "senha").save()
+    print("debug")
+    #Duvida(nome = "nome", email = "email", telefone = "telefone", duvida = "duvida").save()
     for i in Duvida.select():
         print(i.nome)

@@ -235,7 +235,7 @@ iframe {
 	left: -300px; 
 }
 .link {
-	background-image: url(/static/img/gray.jpg);
+	background-image: url(/static/img/icons/gray.jpg);
 	background-size: 100%;
 	background-position: top;
 	background-repeat: no-repeat;

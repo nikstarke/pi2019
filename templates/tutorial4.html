@@ -7,9 +7,7 @@
         <meta name="author" content="Matheus Silvério e Nikolas Starke">
         <title>Como trocar uma lâmpada</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="design_aboutus.css">
-        <link rel="stylesheet" type="text/css" href="menulateral.css">
-        <link rel="stylesheet" type="text/css" href="modelo.css">
+        <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/modelo.css') }}>
     </head>
     <body>
 
@@ -34,7 +32,7 @@
         <!--Conteúdo específico da página-->
         
         <h3 class="cinza" id="tutorial">Como trocar uma lâmpada queimada</Table></h3>
-        <img class="imgtutorial" src="img/tutoriais/tutorial4/trocarlampada.png" alt="Umidade">
+        <img class="imgtutorial" src="/static/img/tutoriais/tutorial4/trocarlampada.png" alt="Lampada">
 
         <div class="passos">
             <p class="passos">Nem sempre estamos preparados para resolver pequenos reparos domésticos, como por exemplo, uma lâmpada queimada. Você está sozinho (a) em casa e a lâmpada de repente se apaga. Nessa hora, é fundamental saber como trocá-la de maneira simples e prática. Siga o nosso passo a passo e não tenha mais dúvidas quando isso acontecer:</p>
@@ -42,7 +40,7 @@
         
         <div class="passos">
             <h4 class="passos">Passo 1:</h4>
-            <img class="passos" src="img/tutoriais/tutorial4/desligandointerruptor.png">
+            <img class="passos" src="/static/img/tutoriais/tutorial4/desligandointerruptor.png">
             <p class="passos" id="comimg">Para que não haja problema com choques elétricos, procure desligar o interruptor e o disjuntor.</p>
         </div>
         <div class="passos">
@@ -51,12 +49,12 @@
         </div>
         <div class="passos">
             <h4 class="passos">Passo 3:</h4>
-            <img class="passos" src="img/tutoriais/tutorial4/pesdescalcos.png">
+            <img class="passos" src="/static/img/tutoriais/tutorial4/pesdescalcos.png">
             <p class="passos" id="comimg">Se não alcançar, pegue uma escada ou uma cadeira. Nunca faça esse serviço com os pés descalços.</p>
         </div>
         <div class="passos">
             <h4 class="passos">Passo 4:</h4>
-            <img class="passos" src="img/tutoriais/tutorial4/girarlampada.png">
+            <img class="passos" src="/static/img/tutoriais/tutorial4/girarlampada.png">
             <p class="passos" id="comimg">Gire a lâmpada com cuidado no sentido anti-horário. Mas cuidado para não se queimar! Caso ela ainda esteja quente, aguarde alguns minutos até que ela esfrie completamente.</p>
         </div>
         <div class="passos">
@@ -69,7 +67,7 @@
         </div>
         <div class="passos">
             <h4 class="passos">Passo 7:</h4>
-            <img class="passos" src="img/tutoriais/tutorial4/ligarinterruptor.png">
+            <img class="passos" src="/static/img/tutoriais/tutorial4/ligarinterruptor.png">
             <p class="passos" id="comimg">Pronto. Já pode religar o disjuntor no quadro de luz e o interruptor para testar o serviço.</p>
         </div>
         <br><br><br><br>
