@@ -33,7 +33,6 @@ except:
     pass
 if __name__ == "__main__":
     #Usuario(nome = "nome", email = "email", telefone = "telefone", nascimento = "nascimento", endereco = "endereco", senha = "senha").save()
-    print("debug")
     #Duvida(nome = "nome", email = "email", telefone = "telefone", duvida = "duvida").save()
     for i in Duvida.select():
         print(i.nome)
